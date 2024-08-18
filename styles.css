@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url("BG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-attachment: fixed;
+}
+body::before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    height: 50px;
+}
+
+#main-header.scrolled {
+    background-color: #dcc26c;
+}
+
+
+#main-header.scrolled .logo p {
+    color: black; 
+}
+
+#main-header.scrolled nav ul li a {
+    color: black; 
+}
+
+#main-header.scrolled nav ul li a:hover {
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+
+.logo p{
+    color: #dcc26c;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    list-style: none;   
+    background-color: rgba(23, 1, 1, 0);
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: wheat;
+    font-size: larger;
+}
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.264);
+    color: white;
+}
+.hero{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin: 150px 150px;
+    box-sizing: border-box;
+    line-height: 4.5rem;
+
+}
+.hero h1{
+    color: #dcc26c;
+    font-size: 4rem;
+    margin: 0;
+    width: 80%;
+
+}
+.hero p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 80%;
+
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#types p, #fun-facts p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.content h1 {
+    margin-bottom: 10px;
+    color: #d6c58c;
+    width: 100%;
+}
+.flavs, .facts{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+    max-width: 30%;
+    min-width: 300px;
+    margin: 0;
+}
+.facts{
+    background-color: #ffffffbe;
+    max-width: 20%;
+
+
+}
+.flavs p, .facts p{
+    color:#636161;
+    font-weight: 400;
+}
+.flavs img, .facts img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.cont{
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+#history, #recipes{
+    display: flex;
+    padding-left:  50px;
+    padding-right: 50px;
+    gap: 30px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: auto;
+}
+.sidebar{
+    background: url(banner1.jpg);
+}
+.sidebar-recipes{
+    background: url(banner2.jpg);
+}
+.sidebar, .sidebar-recipes{
+    
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.hist, .reci{
+    margin: 0 auto;
+    width: 70%;
+}
+.text h2,p{
+    color: rgb(232, 223, 223);
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.6rem;
+    word-spacing: 0.2rem;
+    font-weight: lighter;
+    font-weight: 300;
+
+}
+.text h2{
+    font-weight:900;
+    font-size: 1.5rem;
+}
+.nut{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.sect{
+    width: 30%;
+    background-color: #ffffff95;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.sect p, .sect h2{color: black;
+text-align: left;}
+
+.sno p{
+    background-color: rgb(131, 124, 124);
+    width: 20px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    color: #fff; 
+    margin: 50px 0 0 0;
+    text-align: center;
+}
